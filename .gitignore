@@ -5,6 +5,9 @@ build
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcworkspace/contents.xcworkspacedata
+*.xcworkspacedata
+*.xcworkspace
+*xcuserdata*
 
 
 ### Objective-C ###
