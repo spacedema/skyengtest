@@ -13,13 +13,13 @@ class MeaningDetailViewController: UIViewController {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet private weak var previewImageView: UIImageView!
 
-    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet private weak var wordLabel: UILabel!
 
-    @IBOutlet weak var translationLabel: UILabel!
+    @IBOutlet private weak var translationLabel: UILabel!
 
-    @IBOutlet weak var transcriptionLabel: UILabel!
+    @IBOutlet private weak var transcriptionLabel: UILabel!
 
     // MARK: - Dependencies
 
@@ -48,7 +48,7 @@ extension MeaningDetailViewController: IMeaningDetailViewInput {
         translationLabel.text = model.translation
         transcriptionLabel.text = model.transcription
         if let previewUrl = model.largeImageUrl, let imageUrl = URL(string: previewUrl) {
-            previewImageView.af_setImage(withURL: imageUrl)
+            previewImageView.af_setImage(withURL: imageUrl, placeholderImage: nil, imageTransition: .crossDissolve(0.5))
         }
     }
 

@@ -14,7 +14,7 @@ class MeaningsListViewController: UIViewController {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Dependencies
 
@@ -63,7 +63,9 @@ extension MeaningsListViewController: IMeaningListViewInput {
 extension MeaningsListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "meaningsListViewCell", for: indexPath) as! MeaningListViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "meaningsListViewCell", for: indexPath) as? MeaningListViewCell else {
+            return UITableViewCell()
+        }
         cell.set(model: ds[indexPath.row])
         return cell
     }

@@ -14,11 +14,11 @@ class MeaningListViewCell: UITableViewCell {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet private weak var previewImageView: UIImageView!
 
-    @IBOutlet weak var translationLabel: UILabel!
+    @IBOutlet private weak var translationLabel: UILabel!
 
-    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet private weak var wordLabel: UILabel!
 
     // MARK: - Logic
 
@@ -27,7 +27,7 @@ class MeaningListViewCell: UITableViewCell {
         wordLabel.text = model.word
 
         if let previewUrl = model.smallImageUrl, let imageUrl = URL(string: previewUrl) {
-            previewImageView.af_setImage(withURL: imageUrl)
+            previewImageView.af_setImage(withURL: imageUrl, placeholderImage: nil, imageTransition: .crossDissolve(0.5))
         }
     }
 
