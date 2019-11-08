@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Result
 
 typealias WordRequestCompletion = (Result<[Word], APIError>) -> Void
 

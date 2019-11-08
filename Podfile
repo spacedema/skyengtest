@@ -9,7 +9,6 @@ target 'SkyEngTest' do
     pod 'Alamofire'
     pod 'AlamofireImage'
     pod 'PKHUD'
-    pod 'Result'
 
   target 'SkyEngTestTests' do
     inherit! :search_paths
