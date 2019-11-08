@@ -3,17 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		764DCC732653195F63519BD0 /* Pods_SkyEngTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E4EC55A8975151214EB6C0 /* Pods_SkyEngTest.framework */; };
+		AE29897B9FC496F722EFEEA9 /* Pods_SkyEngTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5B608F922B30EBA61C2AD2 /* Pods_SkyEngTestTests.framework */; };
+		D55ED79A237554A600207232 /* MeaningDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED799237554A600207232 /* MeaningDetailWireFrame.swift */; };
+		D55ED79C237554B600207232 /* IMeaningDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED79B237554B600207232 /* IMeaningDetailWireFrame.swift */; };
+		D55ED79F2375554B00207232 /* MeaningDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55ED79E2375554B00207232 /* MeaningDetailView.storyboard */; };
+		D55ED7A12375564100207232 /* MeaningDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7A02375564100207232 /* MeaningDetailViewController.swift */; };
+		D55ED7A3237556CC00207232 /* IMeaningDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7A2237556CC00207232 /* IMeaningDetailViewInput.swift */; };
+		D55ED7A62375579800207232 /* IMeaningDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7A52375579800207232 /* IMeaningDetailPresenter.swift */; };
+		D55ED7A82375584700207232 /* IMeaningDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7A72375584700207232 /* IMeaningDetailViewOutput.swift */; };
+		D55ED7AA2375594400207232 /* MeaningDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7A92375594400207232 /* MeaningDetailPresenter.swift */; };
+		D55ED7AD23755EA200207232 /* MeaningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED7AC23755EA200207232 /* MeaningModel.swift */; };
 		D5BCC1C62374982600CCD229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1C52374982600CCD229 /* AppDelegate.swift */; };
 		D5BCC1C82374982600CCD229 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1C72374982600CCD229 /* SceneDelegate.swift */; };
-		D5BCC1CA2374982600CCD229 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1C92374982600CCD229 /* ViewController.swift */; };
-		D5BCC1CD2374982600CCD229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC1CB2374982600CCD229 /* Main.storyboard */; };
 		D5BCC1CF2374982800CCD229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC1CE2374982800CCD229 /* Assets.xcassets */; };
 		D5BCC1D22374982800CCD229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC1D02374982800CCD229 /* LaunchScreen.storyboard */; };
 		D5BCC1DD2374982800CCD229 /* SkyEngTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1DC2374982800CCD229 /* SkyEngTestTests.swift */; };
+		D5BCC1E92374987000CCD229 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1E82374987000CCD229 /* Endpoints.swift */; };
+		D5BCC1EC2374997200CCD229 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1EB2374997200CCD229 /* Word.swift */; };
+		D5BCC1EE2374999E00CCD229 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1ED2374999E00CCD229 /* Meaning.swift */; };
+		D5BCC1F0237499D400CCD229 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1EF237499D400CCD229 /* Translation.swift */; };
+		D5BCC1F323749B1E00CCD229 /* MeaningsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1F223749B1E00CCD229 /* MeaningsListViewController.swift */; };
+		D5BCC1F523749B7900CCD229 /* MeaningListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC1F423749B7900CCD229 /* MeaningListView.storyboard */; };
+		D5BCC1F723749FD700CCD229 /* MeaningListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1F623749FD700CCD229 /* MeaningListViewCell.swift */; };
+		D5BCC1F92374A2D700CCD229 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1F82374A2D700CCD229 /* ApiService.swift */; };
+		D5BCC1FF2374B2FC00CCD229 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC1FE2374B2FC00CCD229 /* ApiError.swift */; };
+		D5BCC2012374B4C100CCD229 /* ISkyEngApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC2002374B4C100CCD229 /* ISkyEngApiService.swift */; };
+		D5BCC2062374B61800CCD229 /* Request+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC2052374B61800CCD229 /* Request+Log.swift */; };
+		D5BCC20C2374B7AB00CCD229 /* MeaningListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC20B2374B7AB00CCD229 /* MeaningListPresenter.swift */; };
+		D5BCC20E2374B7E000CCD229 /* IMeaningListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC20D2374B7E000CCD229 /* IMeaningListViewInput.swift */; };
+		D5BCC2102374B84100CCD229 /* IMeaningListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC20F2374B84100CCD229 /* IMeaningListInteractorInput.swift */; };
+		D5BCC2142374B99800CCD229 /* IMeaningListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC2132374B99800CCD229 /* IMeaningListInteractorOutput.swift */; };
+		D5BCC2162374BA8C00CCD229 /* IMeaningListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC2152374BA8C00CCD229 /* IMeaningListPresenter.swift */; };
+		D5BCC21A2374BBAE00CCD229 /* MeaningListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC2192374BBAE00CCD229 /* MeaningListInteractor.swift */; };
+		D5BCC21C2374BDE200CCD229 /* IMeaningListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC21B2374BDE200CCD229 /* IMeaningListViewOutput.swift */; };
+		D5FB9FF7237553E5004BBDEB /* MeaningListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB9FF5237553E5004BBDEB /* MeaningListWireFrame.swift */; };
+		D5FB9FF8237553E5004BBDEB /* IMeaningListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FB9FF6237553E5004BBDEB /* IMeaningListWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +56,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D5BCC1C22374982600CCD229 /* SkyEngTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF5F301B7F67E682B0712CE /* Pods-SkyEngTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.debug.xcconfig"; sourceTree = "<group>"; };
+		62E4EC55A8975151214EB6C0 /* Pods_SkyEngTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A11844D453262DA4982B09F /* Pods-SkyEngTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTestTests.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTestTests/Pods-SkyEngTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB5B608F922B30EBA61C2AD2 /* Pods_SkyEngTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55ED799237554A600207232 /* MeaningDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningDetailWireFrame.swift; sourceTree = "<group>"; };
+		D55ED79B237554B600207232 /* IMeaningDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningDetailWireFrame.swift; sourceTree = "<group>"; };
+		D55ED79E2375554B00207232 /* MeaningDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeaningDetailView.storyboard; sourceTree = "<group>"; };
+		D55ED7A02375564100207232 /* MeaningDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningDetailViewController.swift; sourceTree = "<group>"; };
+		D55ED7A2237556CC00207232 /* IMeaningDetailViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningDetailViewInput.swift; sourceTree = "<group>"; };
+		D55ED7A52375579800207232 /* IMeaningDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningDetailPresenter.swift; sourceTree = "<group>"; };
+		D55ED7A72375584700207232 /* IMeaningDetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningDetailViewOutput.swift; sourceTree = "<group>"; };
+		D55ED7A92375594400207232 /* MeaningDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningDetailPresenter.swift; sourceTree = "<group>"; };
+		D55ED7AC23755EA200207232 /* MeaningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningModel.swift; sourceTree = "<group>"; };
+		D5BCC1C22374982600CCD229 /* SkyengTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyengTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BCC1C52374982600CCD229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BCC1C72374982600CCD229 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5BCC1C92374982600CCD229 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5BCC1CC2374982600CCD229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5BCC1CE2374982800CCD229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BCC1D12374982800CCD229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BCC1D32374982800CCD229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5BCC1D82374982800CCD229 /* SkyEngTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BCC1DC2374982800CCD229 /* SkyEngTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTestTests.swift; sourceTree = "<group>"; };
 		D5BCC1DE2374982800CCD229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BCC1E82374987000CCD229 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		D5BCC1EB2374997200CCD229 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		D5BCC1ED2374999E00CCD229 /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		D5BCC1EF237499D400CCD229 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		D5BCC1F223749B1E00CCD229 /* MeaningsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningsListViewController.swift; sourceTree = "<group>"; };
+		D5BCC1F423749B7900CCD229 /* MeaningListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeaningListView.storyboard; sourceTree = "<group>"; };
+		D5BCC1F623749FD700CCD229 /* MeaningListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningListViewCell.swift; sourceTree = "<group>"; };
+		D5BCC1F82374A2D700CCD229 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D5BCC1FE2374B2FC00CCD229 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		D5BCC2002374B4C100CCD229 /* ISkyEngApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISkyEngApiService.swift; sourceTree = "<group>"; };
+		D5BCC2052374B61800CCD229 /* Request+Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Log.swift"; sourceTree = "<group>"; };
+		D5BCC20B2374B7AB00CCD229 /* MeaningListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningListPresenter.swift; sourceTree = "<group>"; };
+		D5BCC20D2374B7E000CCD229 /* IMeaningListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningListViewInput.swift; sourceTree = "<group>"; };
+		D5BCC20F2374B84100CCD229 /* IMeaningListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningListInteractorInput.swift; sourceTree = "<group>"; };
+		D5BCC2132374B99800CCD229 /* IMeaningListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningListInteractorOutput.swift; sourceTree = "<group>"; };
+		D5BCC2152374BA8C00CCD229 /* IMeaningListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningListPresenter.swift; sourceTree = "<group>"; };
+		D5BCC2192374BBAE00CCD229 /* MeaningListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningListInteractor.swift; sourceTree = "<group>"; };
+		D5BCC21B2374BDE200CCD229 /* IMeaningListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMeaningListViewOutput.swift; sourceTree = "<group>"; };
+		D5FB9FF5237553E5004BBDEB /* MeaningListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningListWireFrame.swift; sourceTree = "<group>"; };
+		D5FB9FF6237553E5004BBDEB /* IMeaningListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMeaningListWireFrame.swift; sourceTree = "<group>"; };
+		E2490B5B95A681A4B59F2517 /* Pods-SkyEngTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.release.xcconfig"; sourceTree = "<group>"; };
+		F068C98FABA477A1244F832C /* Pods-SkyEngTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTestTests/Pods-SkyEngTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764DCC732653195F63519BD0 /* Pods_SkyEngTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,25 +115,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE29897B9FC496F722EFEEA9 /* Pods_SkyEngTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2CF8DBF8C4B4983C0B1B2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DF5F301B7F67E682B0712CE /* Pods-SkyEngTest.debug.xcconfig */,
+				E2490B5B95A681A4B59F2517 /* Pods-SkyEngTest.release.xcconfig */,
+				F068C98FABA477A1244F832C /* Pods-SkyEngTestTests.debug.xcconfig */,
+				8A11844D453262DA4982B09F /* Pods-SkyEngTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D55ED79D2375550400207232 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D55ED7A2237556CC00207232 /* IMeaningDetailViewInput.swift */,
+				D55ED7A72375584700207232 /* IMeaningDetailViewOutput.swift */,
+				D55ED79E2375554B00207232 /* MeaningDetailView.storyboard */,
+				D55ED7A02375564100207232 /* MeaningDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55ED7A42375577900207232 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D55ED7A52375579800207232 /* IMeaningDetailPresenter.swift */,
+				D55ED7A92375594400207232 /* MeaningDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D55ED7AE23755F2300207232 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC1EB2374997200CCD229 /* Word.swift */,
+				D5BCC1ED2374999E00CCD229 /* Meaning.swift */,
+				D5BCC1EF237499D400CCD229 /* Translation.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D55ED7AF23755F2E00207232 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D55ED7AC23755EA200207232 /* MeaningModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		D5BCC1B92374982600CCD229 = {
 			isa = PBXGroup;
 			children = (
 				D5BCC1C42374982600CCD229 /* SkyEngTest */,
 				D5BCC1DB2374982800CCD229 /* SkyEngTestTests */,
 				D5BCC1C32374982600CCD229 /* Products */,
+				7C2CF8DBF8C4B4983C0B1B2A /* Pods */,
+				DABB0ABAFE067DAE16BF742E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D5BCC1C32374982600CCD229 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5BCC1C22374982600CCD229 /* SkyEngTest.app */,
+				D5BCC1C22374982600CCD229 /* SkyengTest.app */,
 				D5BCC1D82374982800CCD229 /* SkyEngTestTests.xctest */,
 			);
 			name = Products;
@@ -79,10 +194,12 @@
 		D5BCC1C42374982600CCD229 /* SkyEngTest */ = {
 			isa = PBXGroup;
 			children = (
+				D5BCC2022374B54100CCD229 /* Utils */,
+				D5BCC1EA2374992000CCD229 /* Models */,
+				D5BCC1E72374985C00CCD229 /* Api */,
+				D5BCC1F123749ADC00CCD229 /* Modules */,
 				D5BCC1C52374982600CCD229 /* AppDelegate.swift */,
 				D5BCC1C72374982600CCD229 /* SceneDelegate.swift */,
-				D5BCC1C92374982600CCD229 /* ViewController.swift */,
-				D5BCC1CB2374982600CCD229 /* Main.storyboard */,
 				D5BCC1CE2374982800CCD229 /* Assets.xcassets */,
 				D5BCC1D02374982800CCD229 /* LaunchScreen.storyboard */,
 				D5BCC1D32374982800CCD229 /* Info.plist */,
@@ -99,6 +216,122 @@
 			path = SkyEngTestTests;
 			sourceTree = "<group>";
 		};
+		D5BCC1E72374985C00CCD229 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC2002374B4C100CCD229 /* ISkyEngApiService.swift */,
+				D5BCC1F82374A2D700CCD229 /* ApiService.swift */,
+				D5BCC1E82374987000CCD229 /* Endpoints.swift */,
+				D5BCC1FE2374B2FC00CCD229 /* ApiError.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D5BCC1EA2374992000CCD229 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D55ED7AF23755F2E00207232 /* Domain */,
+				D55ED7AE23755F2300207232 /* Api */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5BCC1F123749ADC00CCD229 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D5FB9FF32375537B004BBDEB /* Details */,
+				D5FB9FF223755368004BBDEB /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D5BCC2022374B54100CCD229 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC2052374B61800CCD229 /* Request+Log.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D5BCC2072374B74400CCD229 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC20D2374B7E000CCD229 /* IMeaningListViewInput.swift */,
+				D5BCC21B2374BDE200CCD229 /* IMeaningListViewOutput.swift */,
+				D5BCC1F423749B7900CCD229 /* MeaningListView.storyboard */,
+				D5BCC1F223749B1E00CCD229 /* MeaningsListViewController.swift */,
+				D5BCC1F623749FD700CCD229 /* MeaningListViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5BCC2082374B75300CCD229 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC20F2374B84100CCD229 /* IMeaningListInteractorInput.swift */,
+				D5BCC2132374B99800CCD229 /* IMeaningListInteractorOutput.swift */,
+				D5BCC2192374BBAE00CCD229 /* MeaningListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D5BCC2092374B75F00CCD229 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC20B2374B7AB00CCD229 /* MeaningListPresenter.swift */,
+				D5BCC2152374BA8C00CCD229 /* IMeaningListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D5BCC20A2374B76800CCD229 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				D5FB9FF6237553E5004BBDEB /* IMeaningListWireFrame.swift */,
+				D5FB9FF5237553E5004BBDEB /* MeaningListWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		D5FB9FF223755368004BBDEB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D5BCC20A2374B76800CCD229 /* WireFrame */,
+				D5BCC2092374B75F00CCD229 /* Presenter */,
+				D5BCC2082374B75300CCD229 /* Interactor */,
+				D5BCC2072374B74400CCD229 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D5FB9FF32375537B004BBDEB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D5FB9FF423755385004BBDEB /* WireFrame */,
+				D55ED7A42375577900207232 /* Presenter */,
+				D55ED79D2375550400207232 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		D5FB9FF423755385004BBDEB /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				D55ED799237554A600207232 /* MeaningDetailWireFrame.swift */,
+				D55ED79B237554B600207232 /* IMeaningDetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		DABB0ABAFE067DAE16BF742E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E4EC55A8975151214EB6C0 /* Pods_SkyEngTest.framework */,
+				CB5B608F922B30EBA61C2AD2 /* Pods_SkyEngTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +339,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5BCC1E12374982800CCD229 /* Build configuration list for PBXNativeTarget "SkyEngTest" */;
 			buildPhases = (
+				C138AFA68CAA2AA746C6E644 /* [CP] Check Pods Manifest.lock */,
 				D5BCC1BE2374982600CCD229 /* Sources */,
 				D5BCC1BF2374982600CCD229 /* Frameworks */,
 				D5BCC1C02374982600CCD229 /* Resources */,
+				5F72572CB617D216D6457479 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,13 +351,14 @@
 			);
 			name = SkyEngTest;
 			productName = SkyEngTest;
-			productReference = D5BCC1C22374982600CCD229 /* SkyEngTest.app */;
+			productReference = D5BCC1C22374982600CCD229 /* SkyengTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D5BCC1D72374982800CCD229 /* SkyEngTestTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5BCC1E42374982800CCD229 /* Build configuration list for PBXNativeTarget "SkyEngTestTests" */;
 			buildPhases = (
+				058C6840CF8EA87E7D9D92ED /* [CP] Check Pods Manifest.lock */,
 				D5BCC1D42374982800CCD229 /* Sources */,
 				D5BCC1D52374982800CCD229 /* Frameworks */,
 				D5BCC1D62374982800CCD229 /* Resources */,
@@ -182,7 +418,8 @@
 			files = (
 				D5BCC1D22374982800CCD229 /* LaunchScreen.storyboard in Resources */,
 				D5BCC1CF2374982800CCD229 /* Assets.xcassets in Resources */,
-				D5BCC1CD2374982600CCD229 /* Main.storyboard in Resources */,
+				D55ED79F2375554B00207232 /* MeaningDetailView.storyboard in Resources */,
+				D5BCC1F523749B7900CCD229 /* MeaningListView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +432,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		058C6840CF8EA87E7D9D92ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyEngTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F72572CB617D216D6457479 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C138AFA68CAA2AA746C6E644 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyEngTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5BCC1BE2374982600CCD229 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5BCC1CA2374982600CCD229 /* ViewController.swift in Sources */,
+				D55ED7A82375584700207232 /* IMeaningDetailViewOutput.swift in Sources */,
+				D5BCC20E2374B7E000CCD229 /* IMeaningListViewInput.swift in Sources */,
+				D5BCC1FF2374B2FC00CCD229 /* ApiError.swift in Sources */,
+				D5BCC1F323749B1E00CCD229 /* MeaningsListViewController.swift in Sources */,
+				D5FB9FF7237553E5004BBDEB /* MeaningListWireFrame.swift in Sources */,
+				D55ED7A12375564100207232 /* MeaningDetailViewController.swift in Sources */,
+				D5BCC21C2374BDE200CCD229 /* IMeaningListViewOutput.swift in Sources */,
+				D55ED79C237554B600207232 /* IMeaningDetailWireFrame.swift in Sources */,
+				D55ED7A62375579800207232 /* IMeaningDetailPresenter.swift in Sources */,
+				D5BCC2012374B4C100CCD229 /* ISkyEngApiService.swift in Sources */,
 				D5BCC1C62374982600CCD229 /* AppDelegate.swift in Sources */,
+				D5BCC1EC2374997200CCD229 /* Word.swift in Sources */,
+				D5BCC20C2374B7AB00CCD229 /* MeaningListPresenter.swift in Sources */,
+				D5BCC2162374BA8C00CCD229 /* IMeaningListPresenter.swift in Sources */,
+				D55ED7AD23755EA200207232 /* MeaningModel.swift in Sources */,
+				D5BCC1E92374987000CCD229 /* Endpoints.swift in Sources */,
+				D55ED7AA2375594400207232 /* MeaningDetailPresenter.swift in Sources */,
+				D5BCC2102374B84100CCD229 /* IMeaningListInteractorInput.swift in Sources */,
+				D5BCC2142374B99800CCD229 /* IMeaningListInteractorOutput.swift in Sources */,
+				D5BCC1F0237499D400CCD229 /* Translation.swift in Sources */,
+				D55ED79A237554A600207232 /* MeaningDetailWireFrame.swift in Sources */,
+				D5BCC1F92374A2D700CCD229 /* ApiService.swift in Sources */,
+				D5FB9FF8237553E5004BBDEB /* IMeaningListWireFrame.swift in Sources */,
+				D5BCC2062374B61800CCD229 /* Request+Log.swift in Sources */,
 				D5BCC1C82374982600CCD229 /* SceneDelegate.swift in Sources */,
+				D55ED7A3237556CC00207232 /* IMeaningDetailViewInput.swift in Sources */,
+				D5BCC21A2374BBAE00CCD229 /* MeaningListInteractor.swift in Sources */,
+				D5BCC1EE2374999E00CCD229 /* Meaning.swift in Sources */,
+				D5BCC1F723749FD700CCD229 /* MeaningListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +552,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D5BCC1CB2374982600CCD229 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5BCC1CC2374982600CCD229 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D5BCC1D02374982800CCD229 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +679,7 @@
 		};
 		D5BCC1E22374982800CCD229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF5F301B7F67E682B0712CE /* Pods-SkyEngTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,15 +689,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacedema.SkyEngTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyfilippov.test;
+				PRODUCT_NAME = SkyengTest;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D5BCC1E32374982800CCD229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2490B5B95A681A4B59F2517 /* Pods-SkyEngTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,15 +708,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacedema.SkyEngTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyfilippov.test;
+				PRODUCT_NAME = SkyengTest;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		D5BCC1E52374982800CCD229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F068C98FABA477A1244F832C /* Pods-SkyEngTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +740,7 @@
 		};
 		D5BCC1E62374982800CCD229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A11844D453262DA4982B09F /* Pods-SkyEngTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
